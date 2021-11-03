@@ -1,0 +1,35 @@
+// Google fonts-Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800&display=swap');
+// Variables
+$main-bg: #f7f7f9;
+$contact-bg: #6070ff;
+
+body {
+    background-color: white;
+}
+
+header{
+    background-color: white;
+}
+
+main {
+    background-color: $main-bg;
+}
+
+#contact{
+    background-color: $contact-bg;
+    border-top-left-radius: 5em;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+form,
+button{
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,83 @@
+html,
+body,
+main,
+section{
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#hero {
+  height: 787px;
+  border-bottom-left-radius: 5em;
+  height: 718px;
+  background-image: url('../img/background-desk.png');
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;   
+}
+
+#navbar > ul > li {
+    margin-right: 2em;
+    list-style: none;
+}
+
+.portfolio-items {
+    width: 80%;
+}
+
+.about-section{
+    width: 100%;
+    border-top-right-radius: 5em;
+    background-color: white;
+}
+
+ul {
+    display:flex;
+}
+
+.project {
+    margin-top: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+   
+}
+
+.work-details{
+    display:flex;
+}
+
+.ul-details {
+    display:flex;
+}
+
+.ul-details > li {
+    list-style: disc;
+    margin-right: 2em;
+}
+
+.ul-tags {
+    padding-left: 0;
+}
+
+.ul-tags li {
+    padding: 3px 14px 3px 14px;
+    background-color: #ebebff;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+    font-weight: 500;
+    list-style: none;
+    margin-right: 2em;
+    margin-bottom: 3em;
+}
