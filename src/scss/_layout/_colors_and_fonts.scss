@@ -16,6 +16,11 @@ main {
   background-color: $main-bg;
 }
 
+footer {
+    color: white;
+    background-color: $contact-bg;
+}
+
 #contact {
   background-color: $contact-bg;
   border-top-left-radius: 5em;
@@ -32,4 +37,9 @@ li,
 form,
 button {
   font-family: 'Poppins', sans-serif;
+}
+
+.tools {
+    background-color: #f7f7f9;
+    
 }

@@ -172,7 +172,7 @@
       </ul>
     </section>
     <section id="about" class="d-flex justify-content-center align-items-center">
-      <row class="d-flex justify-content-center about-section">
+      <row class="d-flex justify-content-center about-section gap-3">
         <div class="col-lg-3 my-5 py-5">
           <h1>About<br>MySelf</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, hic ab, itaque unde est cumque ut repellat natus, cupiditate iure eligendi quos nemo quidem dicta vel corrupti eaque vero. Obcaecati.</p>
@@ -202,7 +202,11 @@
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="tools-wraper d-flex justify-content-start m-5">
+                  <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/js-icon.png" alt="javascript"><p>javascript</p></div>
+                  <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/css-icon.png" alt="javascript"><p>CSS</p></div>
+                  <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/html-icon.png" alt="javascript"><p>HTML</p></div>
+                </div>
               </div>
             </div>
             <div class="accordion-item">
@@ -233,7 +237,7 @@
   <footer id="footer">
     <section id="contact" class="d-flex justify-content-center align-items-center">
         <div class="contact-section my-5 py-5 row d-flex flex-column justify-content-center align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 d-flex flex-column text-center align-items-center">
               <h2 class="contact-title col-lg-5">Contact me</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt 
                 hic aliquam minus dolorem accusamus, est tempore ipsam ex deleniti.
@@ -259,19 +263,7 @@
                   <label class="form-label" for="form4Example3">Message</label>
                 </div>
               
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input
-                    class="form-check-input me-2"
-                    type="checkbox"
-                    value=""
-                    id="form4Example4"
-                    checked
-                  />
-                  <label class="form-check-label" for="form4Example4">
-                    Send me a copy of this message
-                  </label>
-                </div>
+             
               
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
