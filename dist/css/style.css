@@ -1,0 +1,8 @@
+.brands li { 
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.connect {
+  text-decoration: none;
+}

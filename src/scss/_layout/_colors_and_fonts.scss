@@ -5,20 +5,33 @@ $main-bg: #f7f7f9;
 $contact-bg: #6070ff;
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
-header{
-    background-color: white;
+header {
+  background-color: white;
 }
 
 main {
-    background-color: $main-bg;
+  background-color: $main-bg;
 }
 
-#contact{
-    background-color: $contact-bg;
-    border-top-left-radius: 5em;
+footer {
+  color: white;
+  background-color: $contact-bg;
+  border-top-left-radius: 5em;
+}
+
+#contact {
+  border-top-left-radius: 8em;
+  background-image: url('../img/background-desk.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a,
@@ -30,6 +43,10 @@ h4,
 ul,
 li,
 form,
-button{
-    font-family: 'Poppins', sans-serif;
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tools {
+  background-color: #f7f7f9;
 }

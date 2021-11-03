@@ -1,75 +1,36 @@
 html,
 body,
 main,
-section{
-    overflow-x: hidden;
+section {
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  display: flex;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 #hero {
   height: 787px;
   border-bottom-left-radius: 5em;
-  height: 718px;
   background-image: url('../img/background-desk.png');
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 5rem;
-  border-top-left-radius: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;   
-}
-
-#navbar > ul > li {
-    margin-right: 2em;
-    list-style: none;
-}
-
-.portfolio-items {
-    width: 80%;
-}
-
-.about-section{
-    width: 100%;
-    border-top-right-radius: 5em;
-    background-color: white;
-}
-
-ul {
-    display:flex;
-}
-
-.project {
-    margin-top: 40px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-   
-}
-
-.work-details{
-    display:flex;
-}
-
-.ul-details {
-    display:flex;
-}
-
-.ul-details > li {
-    list-style: disc;
-    margin-right: 2em;
+  align-items: center;
 }
 
 .ul-tags {
-    padding-left: 0;
-}
+  padding-left: 0;
 
-.ul-tags li {
+  li {
     padding: 3px 14px 3px 14px;
     background-color: #ebebff;
     border-radius: 8px;
@@ -80,4 +41,88 @@ ul {
     list-style: none;
     margin-right: 2em;
     margin-bottom: 3em;
+  }
+}
+
+.ul-details {
+  display: flex;
+
+  li {
+    list-style: disc;
+    margin-right: 4rem;
+  }
+}
+
+#navbar > ul > li {
+  margin-right: 2em;
+  list-style: none;
+}
+
+.portfolio-items {
+  width: 80%;
+}
+
+.about-section {
+  width: 100%;
+  border-top-right-radius: 5em;
+  background-color: white;
+}
+
+.project {
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.work-details {
+  display: flex;
+
+  .p-details {
+    margin-right: 3rem;
+  }
+}
+
+.modal-dialog,
+.modal-content {
+  background: rgba(96, 112, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.btn-close-white {
+  opacity: 1;
+}
+
+.menu-mobile-li {
+  font-size: 30px;
+  color: white;
+  list-style: none;
+
+  a {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.fa-bars {
+  color: #6070ff;
+}
+
+.hamburger {
+  border: none;
+}
+
+@media (max-width: 557px) {
+  #portfolio {
+    display: block;
+  }
 }

@@ -1,291 +1,301 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fonts awesome -->
-  <!-- FontAwesome 5.15.3 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- (Optional) Use CSS or JS implementation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap CSS v5.0.2 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="dist/css/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <header id="header" class="fixed-top">
-    <div class="container-fluid">
-      <div class="row justify-content-between">
-        <div class="col-xl-12 d-flex align-items-center justify-content-lg-between">
-          <h2 class="logo me-auto me-lg-0">W. Teixeira</h2>
-          <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul class="d-flex">
-              <li><a href="#portfolio" class="nav-link scrollto">Portfolio</a></li>
-              <li><a href="#about" class="nav-link scrollto">About</a></li>
-              <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- FontAwesome 5.15.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- Scrollable modal -->
+    <div class="modal fade" id="menu-mobile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content d-flex">
+          <button type="button" class="btn-close align-self-end btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row">
+            <ul class="flex-column menu-mobile-li">
+              <li><a href="#portfolio" class="nav-link scrollto" data-bs-dismiss="modal">Portfolio</a></li>
+              <li><a href="#about" class="nav-link scrollto" data-bs-dismiss="modal">About</a></li>
+              <li><a href="#contact" class="nav-link scrollto" data-bs-dismiss="modal">Contact</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <section id="hero" class="d-flex justify-content-center align-items-center">
-    <section class="headline d-flex justify-content-center  flex-column col-lg-6">
-      <h1>I’m Willian Teixeira <br> Glad to see you!</h1>
-      <p>
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact
-        me.
-      </p>
-      
-      
-      <a class="connect" href="#">LET'S CONNECT</a>
-      <ul class="brands">
-        <li>
-          <a href="https://twitter.com/iwillteixeira" rel="noopener no-referrer" target="_blank"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/juscelino-t-39aa9049/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="https://angel.co/" rel="noopener" target="_blank"><i class="fab fa-angellist"></i></a>
-        </li>
-      </ul>
-    </section>
-  </section>
-  <main id="main">
-    <section id="portfolio" class="d-flex justify-content-center align-items-center">
-      <ul class="work-inside d-flex flex-column my-5 py-5 col-lg-9">
-        <li class="project d-flex flex-column flex-lg-row gap-5 d-sm-inline-flex">
-          <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap1x2.png" alt="Project One">
-          <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap1.png" alt="Project One">
-          <div class="text-work col-lg-4">
-            <h2 class="work-title">Tonic</h2>
-            <div class="work-details">
-              <p class="p-details">CANOPY</p>
-              <ul class="ul-details">
-                <li>Back End Dev</li>
-                <li>2015</li>
+
+    <header id="header" class="fixed-top">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-xl-12 d-flex align-items-center justify-content-lg-between">
+            <h2 class="logo me-auto me-lg-0">W. Teixeira</h2>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+              <button class="hamburger d-block d-sm-none" type="button" data-bs-toggle="modal" data-bs-target="#menu-mobile" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="fas fa-bars fa-2x"></i>
+              </button>
+              <ul class="d-none d-sm-flex">
+                <li><a href="#portfolio" class="nav-link scrollto">Portfolio</a></li>
+                <li><a href="#about" class="nav-link scrollto">About</a></li>
+                <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
               </ul>
-            </div>
-            <p class="p-ul-details">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <div class="work-btn">
-              <button type="button" class="btn btn-primary">See Project</button>
-            </div>
-          </div>
-          
-        </li>
-        <li class="project project d-flex flex-column flex-lg-row-reverse gap-5">
-          <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap2x2.png" alt="Project two">
-          <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap2.png" alt="Project two">
-          <div class="text-work col-lg-4">
-            <h2 class="work-title">Multi-Post Stories</h2>
-            <div class="work-details">
-              <p class="p-details">CANOPY</p>
-              <ul class="ul-details">
-                <li>Back End Dev</li>
-                <li>2015</li>
-              </ul>
-            </div>
-            <p class="p-ul-details">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <div class="work-btn">
-              <button type="button" class="btn btn-primary">See Project</button>
-            </div>
-          </div>
-        </li>
-        <li class="project project d-flex flex-column flex-lg-row gap-5">
-          <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap3x2.png" alt="Project three">
-          <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap3.png" alt="Project three">
-          <div class="text-work col-lg-4">
-            <h2 class="work-title">Tonic</h2>
-            <div class="work-details">
-              <p class="p-details">CANOPY</p>
-              <ul class="ul-details">
-                <li>Back End Dev</li>
-                <li>2015</li>
-              </ul>
-            </div>
-            <p class="p-ul-details">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <div class="work-btn">
-              <button type="button" class="btn btn-primary">See Project</button>
-            </div>
-          </div>
-        </li>
-        <li class="project project d-flex flex-column flex-lg-row-reverse gap-5">
-          <img class="mobile-img mobile-img d-none d-sm-block d-md-none" src="dist/img/snap4x2.png" alt="Project four">
-          <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap4.png" alt="Project four">
-          <div class="text-work col-lg-4">
-            <h2 class="work-title">Multi-Post Stories</h2>
-            <div class="work-details">
-              <p class="p-details">CANOPY</p>
-              <ul class="ul-details">
-                <li>Back End Dev</li>
-                <li>2015</li>
-              </ul>
-            </div>
-            <p class="p-ul-details">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-            </ul>
-            <div class="work-btn">
-              <button type="button" class="btn btn-primary">See Project</button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section id="about" class="d-flex justify-content-center align-items-center">
-      <row class="d-flex justify-content-center about-section">
-        <div class="col-lg-3 my-5 py-5">
-          <h1>About<br>MySelf</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, hic ab, itaque unde est cumque ut repellat natus, cupiditate iure eligendi quos nemo quidem dicta vel corrupti eaque vero. Obcaecati.</p>
-          <h3 class="connect">LET'S CONNECT</h3>
-          <ul class="brands d-flex">
-            <li>
-              <a href="https://twitter.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/juscelino-t-39aa9049/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-              <a href="https://angel.co/" rel="noopener" target="_blank"><i class="fab fa-angellist"></i></a>
-            </li>
-          </ul>
-          <a name="" id="" class="btn btn-primary" href="#" role="button">get my resume</a>
-        </div>
-        <div class="col-lg-5 my-5 py-5">
-          <div class="accordion accordion-flush" id="accordionFlushtools">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
+            </nav>
           </div>
         </div>
-      </row>
+      </div>
+    </header>
+    <section id="hero" class="d-flex justify-content-center align-items-center">
+      <section class="headline d-flex justify-content-center  flex-column col-lg-6">
+        <h1>Willian Teixeira & Ivan Linares <br> Glad to see you!</h1>
+        <p>
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        
+        
+        <a class="connect" href="#"><h3>LET'S CONNECT</h3></a>
+        <ul class="brands">
+          <li>
+            <a href="https://twitter.com/iwillteixeira" rel="noopener no-referrer" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/juscelino-t-39aa9049/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://angel.co/" rel="noopener" target="_blank"><i class="fab fa-angellist"></i></a>
+          </li>
+        </ul>
+      </section>
     </section>
-  </main>
-  <footer id="footer">
-    <section id="contact" class="d-flex justify-content-center align-items-center">
-        <div class="contact-section my-5 py-5 row d-flex flex-column justify-content-center align-items-center">
-            <div class="col-lg-5">
-              <h2 class="contact-title col-lg-5">Contact me</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt 
-                hic aliquam minus dolorem accusamus, est tempore ipsam ex deleniti.
+    <main id="main">
+      <section id="portfolio" class="d-lg-flex flex-lg-column align-items-lg-center">
+        <ul class="work-inside d-flex flex-column my-5 py-5">
+          <li class="project d-flex flex-column flex-lg-row gap-5 d-sm-inline-flex">
+            <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap1x2.png" alt="Project One">
+            <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap1.png" alt="Project One">
+            <div class="text-work col-lg-4">
+              <h2 class="work-title">Tonic</h2>
+              <div class="work-details">
+                <p class="p-details">CANOPY</p>
+                <ul class="ul-details">
+                  <li>Back End Dev</li>
+                  <li>2015</li>
+                </ul>
+              </div>
+              <p class="p-ul-details">
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
               </p>
+              <ul class="ul-tags">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="work-btn">
+                <button type="button" class="btn btn-primary">See Project</button>
+              </div>
             </div>
-            <div id="form-holder" class="col-lg-4">
-              <form>
-                <!-- Name input -->
-                <div class="form-outline mb-4">
-                  <input type="text" id="form4Example1" class="form-control" />
-                  <label class="form-label" for="form4Example1">Name</label>
-                </div>
-              
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form4Example2" class="form-control" />
-                  <label class="form-label" for="form4Example2">Email address</label>
-                </div>
-              
-                <!-- Message input -->
-                <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="form-label" for="form4Example3">Message</label>
-                </div>
-              
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input
-                    class="form-check-input me-2"
-                    type="checkbox"
-                    value=""
-                    id="form4Example4"
-                    checked
-                  />
-                  <label class="form-check-label" for="form4Example4">
-                    Send me a copy of this message
-                  </label>
-                </div>
-              
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-              </form>
+            
+          </li>
+          <li class="project project d-flex flex-column flex-lg-row-reverse gap-5">
+            <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap2x2.png" alt="Project two">
+            <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap2.png" alt="Project two">
+            <div class="text-work col-lg-4">
+              <h2 class="work-title">Multi-Post Stories</h2>
+              <div class="work-details">
+                <p class="p-details">CANOPY</p>
+                <ul class="ul-details">
+                  <li>Back End Dev</li>
+                  <li>2015</li>
+                </ul>
+              </div>
+              <p class="p-ul-details">
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="ul-tags">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="work-btn">
+                <button type="button" class="btn btn-primary">See Project</button>
+              </div>
             </div>
-              
-             
-              
+          </li>
+          <li class="project project d-flex flex-column flex-lg-row gap-5">
+            <img class="mobile-img d-none d-sm-block d-md-none" src="dist/img/snap3x2.png" alt="Project three">
+            <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap3.png" alt="Project three">
+            <div class="text-work col-lg-4">
+              <h2 class="work-title">Tonic</h2>
+              <div class="work-details">
+                <p class="p-details">CANOPY</p>
+                <ul class="ul-details">
+                  <li>Back End Dev</li>
+                  <li>2015</li>
+                </ul>
+              </div>
+              <p class="p-ul-details">
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="ul-tags">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="work-btn">
+                <button type="button" class="btn btn-primary">See Project</button>
+              </div>
+            </div>
+          </li>
+          <li class="project project d-flex flex-column flex-lg-row-reverse gap-5">
+            <img class="mobile-img mobile-img d-none d-sm-block d-md-none" src="dist/img/snap4x2.png" alt="Project four">
+            <img class="desktop-img d-sm-none d-md-block" src="dist/img/snap4.png" alt="Project four">
+            <div class="text-work col-lg-4">
+              <h2 class="work-title">Multi-Post Stories</h2>
+              <div class="work-details">
+                <p class="p-details">CANOPY</p>
+                <ul class="ul-details">
+                  <li>Back End Dev</li>
+                  <li>2015</li>
+                </ul>
+              </div>
+              <p class="p-ul-details">
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="ul-tags">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="work-btn">
+                <button type="button" class="btn btn-primary">See Project</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="about" class="d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center about-section gap-3">
+          <div class="col-lg-3 my-5 py-5">
+            <h1>About<br>MySelf</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, hic ab, itaque unde est cumque ut repellat natus, cupiditate iure eligendi quos nemo quidem dicta vel corrupti eaque vero. Obcaecati.</p>
+            <h3 class="connect">LET'S CONNECT</h3>
+            <ul class="brands d-flex">
+              <li>
+                <a href="https://twitter.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/juscelino-t-39aa9049/" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/iwillteixeira" rel="noopener" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://angel.co/" rel="noopener" target="_blank"><i class="fab fa-angellist"></i></a>
+              </li>
+            </ul>
+            <a id="getresume" class="btn btn-primary" href="#" role="button">get my resume</a>
+          </div>
+          <div class="col-lg-5 my-5 py-5">
+            <div class="accordion accordion-flush" id="accordionFlushtools">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Frameworks
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="tools-wraper d-flex justify-content-start m-5">
+                    <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/js-icon.png" alt="javascript"><p>javascript</p></div>
+                    <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/css-icon.png" alt="javascript"><p>CSS</p></div>
+                    <div class="col-md-2 rounded tools m-2 p-3"><img src="dist/img/html-icon.png" alt="javascript"><p>HTML</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Skills
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Languages
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-  </footer>
-  <!-- index js   -->
-  <script src="/dist/js/index.js"></script>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-</html>
+      </section>
+    </main>
+    <footer id="footer">
+      <section id="contact" class="d-flex justify-content-center align-items-center">
+          <div class="contact-section my-5 py-5 row d-flex flex-column justify-content-center align-items-center">
+              <div class="col-lg-5 d-flex flex-column text-center align-items-center">
+                <h2 class="contact-title col-lg-5">Contact me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt 
+                  hic aliquam minus dolorem accusamus, est tempore ipsam ex deleniti.
+                </p>
+              </div>
+              <div id="form-holder" class="col-lg-4">
+                <form>
+                  <!-- Name input -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form4Example1" class="form-control" />
+                    <label class="form-label" for="form4Example1">Name</label>
+                  </div>
+                
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="form4Example2">Email address</label>
+                  </div>
+                
+                  <!-- Message input -->
+                  <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    <label class="form-label" for="form4Example3">Message</label>
+                  </div>
+                
+              
+                
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                </form>
+              </div>
+                
+              
+                
+          </div>
+      </section>
+    </footer>
+    <!-- index js   -->
+    <script src="/dist/js/index.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  </html>
