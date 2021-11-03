@@ -46,10 +46,9 @@ main {
 
 .ul-details {
   display: flex;
-
   li {
     list-style: disc;
-    margin-right: 2em;
+    margin-right: 4rem;
   }
 }
 
@@ -77,13 +76,22 @@ main {
 
 .work-details {
   display: flex;
+  .p-details{
+    margin-right: 3rem;
 }
+
+}
+
 
 .modal-dialog,
 .modal-content {
-  background-color: #6070ff;
-  opacity: 0.9;
-  padding: 20px;
+    background: rgba(96, 112, 255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .modal-backdrop {
@@ -111,4 +119,10 @@ main {
 
 .hamburger {
   border: none;
+}
+
+@media (max-width:557px) {
+    #portfolio{
+        display: block;
+    }
 }
