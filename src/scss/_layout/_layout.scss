@@ -46,6 +46,7 @@ main {
 
 .ul-details {
   display: flex;
+
   li {
     list-style: disc;
     margin-right: 4rem;
@@ -76,22 +77,21 @@ main {
 
 .work-details {
   display: flex;
-  .p-details{
+
+  .p-details {
     margin-right: 3rem;
+  }
 }
-
-}
-
 
 .modal-dialog,
 .modal-content {
-    background: rgba(96, 112, 255,0.5);
-    backdrop-filter: blur(5px);
+  background: rgba(96, 112, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .modal-content {
-    padding-top: 20px;
-    padding-right: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .modal-backdrop {
@@ -121,8 +121,8 @@ main {
   border: none;
 }
 
-@media (max-width:557px) {
-    #portfolio{
-        display: block;
-    }
+@media (max-width: 557px) {
+  #portfolio {
+    display: block;
+  }
 }
