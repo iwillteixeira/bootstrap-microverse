@@ -5,20 +5,20 @@ $main-bg: #f7f7f9;
 $contact-bg: #6070ff;
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
-header{
-    background-color: white;
+header {
+  background-color: white;
 }
 
 main {
-    background-color: $main-bg;
+  background-color: $main-bg;
 }
 
-#contact{
-    background-color: $contact-bg;
-    border-top-left-radius: 5em;
+#contact {
+  background-color: $contact-bg;
+  border-top-left-radius: 5em;
 }
 
 a,
@@ -30,6 +30,6 @@ h4,
 ul,
 li,
 form,
-button{
-    font-family: 'Poppins', sans-serif;
+button {
+  font-family: 'Poppins', sans-serif;
 }
