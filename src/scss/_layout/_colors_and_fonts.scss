@@ -17,13 +17,21 @@ main {
 }
 
 footer {
-    color: white;
-    background-color: $contact-bg;
+  color: white;
+  background-color: $contact-bg;
+  border-top-left-radius: 5em;
 }
 
 #contact {
-  background-color: $contact-bg;
-  border-top-left-radius: 5em;
+  border-top-left-radius: 8em;
+  background-image: url('../img/background-desk.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a,
@@ -40,6 +48,5 @@ button {
 }
 
 .tools {
-    background-color: #f7f7f9;
-    
+  background-color: #f7f7f9;
 }
