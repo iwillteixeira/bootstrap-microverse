@@ -2,7 +2,7 @@ html,
 body,
 main,
 section {
-  overflow-x: hidden;
+  
 }
 
 ul {
@@ -25,6 +25,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px 0 10px;
 }
 
 .ul-tags {
@@ -49,7 +50,7 @@ main {
 
   li {
     list-style: disc;
-    margin-right: 4rem;
+    margin-right: 25px;
   }
 }
 
@@ -79,7 +80,7 @@ main {
   display: flex;
 
   .p-details {
-    margin-right: 3rem;
+    margin-right: 25px;
   }
 }
 

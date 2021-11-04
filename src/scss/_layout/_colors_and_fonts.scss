@@ -3,9 +3,31 @@
 // Variables
 $main-bg: #f7f7f9;
 $contact-bg: #6070ff;
+$h1toh6: #091e42;
+
+@for $i from 1 through 6{
+  h#{$i}{
+    color: $h1toh6;
+  }
+}
+
+h1{
+  font-size: 2rem;
+  line-height: 2.rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+a {
+  font-weight: 500;
+}
 
 body {
-  background-color: white;
+  background-color: $main-bg;
 }
 
 header {
@@ -18,8 +40,29 @@ main {
 
 footer {
   color: white;
+  background-color: white;
+}
+
+.fab {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  color: #396df2;
+  background-color: white;
+  border-color: #396df2;
+  border-radius: 8px;
+
+}
+
+.footerholder {
   background-color: $contact-bg;
   border-top-left-radius: 5em;
+}
+
+.logo{
+  text-decoration: none;
+  font-size:20px;
 }
 
 #contact {
@@ -49,4 +92,17 @@ button {
 
 .tools {
   background-color: #f7f7f9;
+  flex:1
+}
+
+.hamburger {
+  background-color: white;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: white;
+}
+.accordion-button:focus{
+  border:none;
+  box-shadow: none;
 }
